@@ -383,7 +383,7 @@
 <th align="center"><strong>City: Xian</strong></th>
 <th align="center">external feature</th>
 <th align="center">val-rmse</th>
-<th align="center">test-rmse</th>
+<th align="center">test-rmse/mae</th>
 <th align="center">Converged Time</th>
 </tr>
 </thead>
@@ -420,35 +420,35 @@
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(1km)</td>
 <td align="center">-</td>
-<td align="center">5.82147</td>
+<td align="center">5.82147/3.68277</td>
 <td align="center">9.29 hour / 4367 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(5km)</td>
 <td align="center">-</td>
-<td align="center">5.86587</td>
+<td align="center">5.86587/3.71182</td>
 <td align="center">5.31 hour/ 2168 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather</td>
+<td align="center">weather-POIs</td>
 <td align="center">-</td>
-<td align="center">6.39573</td>
+<td align="center">6.39573/3.91383</td>
 <td align="center">6.74 hour / 4149 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-holiday</td>
+<td align="center">holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">5.76101</td>
+<td align="center">5.76101/3.64558</td>
 <td align="center">6.29 hour / 3981 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-tp</td>
+<td align="center">tp-POIs</td>
 <td align="center"></td>
-<td align="center"><strong>5.59311</strong></td>
+<td align="center"><strong>5.59311/3.57204</strong></td>
 <td align="center">7.42 hour / 4587 epochs</td>
 </tr>
 <tr>
@@ -469,22 +469,29 @@
 <td align="center">Raw-Gating</td>
 <td align="center">holiday-tp</td>
 <td align="center">6.75393</td>
-<td align="center"><strong>5.69865</strong></td>
+<td align="center">5.69865</td>
 <td align="center">11.33 hour / 6350 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-holiday</td>
-<td align="center">-<code>2080Ti</code></td>
-<td align="center">6.23974</td>
-<td align="center">5.88 hour / 2004 epochs</td>
+<td align="center">weather-holiday-POIs</td>
+<td align="center">- mark3</td>
+<td align="center">6.07213/3.75587</td>
+<td align="center">18.89 hour / 8460 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-tp</td>
+<td align="center">weather-tp-POIs</td>
 <td align="center">-</td>
-<td align="center">6.04241</td>
+<td align="center">6.04241/3.78300</td>
 <td align="center">3.84 hour / 2218 epochs</td>
+</tr>
+<tr>
+<td align="center">Raw-Gating</td>
+<td align="center">holiday-tp-POIs</td>
+<td align="center">-</td>
+<td align="center"><strong>5.65408/3.60669</strong></td>
+<td align="center">10.21 hour / 4053 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
@@ -497,7 +504,7 @@
 <td align="center">Raw-Gating</td>
 <td align="center">all</td>
 <td align="center">-<code>2080Ti</code></td>
-<td align="center">5.83506</td>
+<td align="center">5.83506/3.66254</td>
 <td align="center">4.91 hour / 2447 epochs</td>
 </tr>
 </tbody>
@@ -544,35 +551,35 @@
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(1km)</td>
 <td align="center">-</td>
-<td align="center">6.91176</td>
+<td align="center">6.91176/4.31013</td>
 <td align="center">3.44 hour / 2102 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(5km)</td>
 <td align="center">-</td>
-<td align="center">6.94793</td>
+<td align="center">6.94793/4.30699</td>
 <td align="center">3.07 hour / 1720 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather</td>
+<td align="center">weather-POIs</td>
 <td align="center">-</td>
-<td align="center">7.27118</td>
+<td align="center">7.27118/4.61461</td>
 <td align="center">3.81 hour / 2948 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-holiday</td>
+<td align="center">holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">6.85825</td>
+<td align="center">6.85825/4.25586</td>
 <td align="center">1.55 hour / 989 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-tp</td>
+<td align="center">tp-POIs</td>
 <td align="center">-</td>
-<td align="center">6.89508</td>
+<td align="center">6.89508/4.27874</td>
 <td align="center">2.68 hour / 1934 epochs</td>
 </tr>
 <tr>
@@ -598,31 +605,38 @@
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-holiday</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">weather-holiday-POIs</td>
+<td align="center">-</td>
+<td align="center">7.07807/4.57461</td>
+<td align="center">3.89 hour / 1007 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-tp</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">weather-tp-POIs</td>
+<td align="center">-</td>
+<td align="center">6.94965/4.38658</td>
+<td align="center">6.70 hour / 3863 epochs</td>
+</tr>
+<tr>
+<td align="center">Raw-Gating</td>
+<td align="center">holiday-tp-POIs</td>
+<td align="center"><code>Dual 2080 Ti</code></td>
+<td align="center">6.86966/4.25710</td>
+<td align="center">7.11 hour / 5140 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">weather-holiday-tp</td>
-<td align="center">6.84756</td>
+<td align="center"><code>Dual 2080 Ti</code>6.84756</td>
 <td align="center">6.95486</td>
 <td align="center">1.49 hour / 1300 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">all</td>
-<td align="center"></td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">-</td>
+<td align="center">6.95498/4.41946</td>
+<td align="center">6.20 hour / 3868 epochs</td>
 </tr>
 </tbody>
 </table></div>
@@ -671,35 +685,35 @@
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(1km)</td>
 <td align="center">-</td>
-<td align="center">159.5556</td>
+<td align="center">159.5556/68.58463</td>
 <td align="center">44.46 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">POIs(5km)</td>
 <td align="center">-</td>
-<td align="center">149.2642</td>
+<td align="center">149.2642/67.4607</td>
 <td align="center">44.12 hour / 20000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather</td>
+<td align="center">weather-POIs</td>
 <td align="center"></td>
-<td align="center">226.16144</td>
-<td align="center">0.94 hour / 168 epochs</td>
+<td align="center">185.93915/84.97754</td>
+<td align="center">18.00 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-holiday</td>
+<td align="center">holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">158.97409</td>
+<td align="center">158.97409/67.81528</td>
 <td align="center">16.53 hour / 10000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-tp</td>
+<td align="center">tp-POIs</td>
 <td align="center">-</td>
-<td align="center">136.9682</td>
+<td align="center">136.9682/62.24074</td>
 <td align="center">16.53 hour / 10000 epochs</td>
 </tr>
 <tr>
@@ -725,17 +739,24 @@
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-holiday</td>
+<td align="center">weather-holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">172.21344</td>
-<td align="center">15.09 hour / 8913 epochs</td>
+<td align="center">171.59058/82.05977</td>
+<td align="center">16.74 hour / 9987 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-tp</td>
+<td align="center">weather-tp-POIs</td>
 <td align="center">-</td>
-<td align="center">207.41214</td>
-<td align="center">1.04 hour / 253 epochs</td>
+<td align="center">171.31071/84.767105</td>
+<td align="center">7.40 hour / 3817 epochs</td>
+</tr>
+<tr>
+<td align="center">Raw-Gating</td>
+<td align="center">holiday-tp-POIs</td>
+<td align="center">-</td>
+<td align="center">131.42278/62.47733</td>
+<td align="center">42.84 hour / 23324 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
@@ -747,9 +768,9 @@
 <tr>
 <td align="center">Raw-Gating</td>
 <td align="center">all</td>
-<td align="center"><code>running 2080 lenovo</code></td>
-<td align="center">165.98578</td>
-<td align="center">10.09 hour / 6003 epochs</td>
+<td align="center">-</td>
+<td align="center">154.93706/72.46980</td>
+<td align="center">31.87 hour / 11605 epochs</td>
 </tr>
 </tbody>
 </table><table border="1" class="docutils">
@@ -878,23 +899,23 @@
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather</td>
+<td align="center">weather-POIs</td>
 <td align="center">-</td>
-<td align="center">0.81972</td>
+<td align="center">0.81972/0.46811</td>
 <td align="center">23.21 hour / 15000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-holiday</td>
+<td align="center">holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">0.78348</td>
+<td align="center">0.78348/0.44191</td>
 <td align="center">23.44 hour / 15000 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-tp</td>
+<td align="center">tp-POIs</td>
 <td align="center">-</td>
-<td align="center">0.78675</td>
+<td align="center">0.78675/0.44357</td>
 <td align="center">18.12 hour / 11494 epochs</td>
 </tr>
 <tr>
@@ -920,17 +941,24 @@
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-holiday</td>
+<td align="center">weather-holiday-POIs</td>
 <td align="center">-</td>
-<td align="center">0.80532</td>
+<td align="center">0.80532/0.46004</td>
 <td align="center">15.28 hour / 8433 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
-<td align="center">POIs-weather-tp</td>
+<td align="center">weather-tp-POIs</td>
 <td align="center">-</td>
-<td align="center">0.78882</td>
+<td align="center">0.78882/0.45799</td>
 <td align="center">8.40 hour / 4556 epochs</td>
+</tr>
+<tr>
+<td align="center">Raw-Gating</td>
+<td align="center">holiday-tp-POIs</td>
+<td align="center">-</td>
+<td align="center">0.77927/0.44514</td>
+<td align="center">22.94 hour / 15040 epochs</td>
 </tr>
 <tr>
 <td align="center">Raw-Gating</td>
@@ -943,7 +971,7 @@
 <td align="center">Raw-Gating</td>
 <td align="center">all</td>
 <td align="center">-</td>
-<td align="center">0.78075</td>
+<td align="center">0.78075/0.45214</td>
 <td align="center">8.53 hour / 4581 epochs</td>
 </tr>
 </tbody>
